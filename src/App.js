@@ -6,25 +6,28 @@ import Footer from './Footer';
 import Main from './Main'; // Home Page
 import About from './About';
 import Menu from './Menu';
-import Reservation from './Reservation';
 import Order from './Order';
 import Login from './Login';
+import ConfirmedBooking from './ConfirmedBooking'; // ✅ Import this at the top
 
-import { Routes, Route } from 'react-router-dom'; // ❌ Remove BrowserRouter
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <Header />
       <Nav />
+      
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/reservation" element={<Reservation />} />
+        {/* <Route path="/reservation" element={<Reservation />} /> */}
         <Route path="/order" element={<Order />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
+
       <Footer />
     </>
   );
