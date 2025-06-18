@@ -8,7 +8,7 @@ import About from './About';
 import Menu from './Menu';
 import Order from './Order';
 import Login from './Login';
-import ConfirmedBooking from './ConfirmedBooking'; // ✅ Import this at the top
+import ConfirmedBooking from './ConfirmedBooking';
 
 import { Routes, Route } from 'react-router-dom';
 
